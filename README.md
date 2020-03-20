@@ -1,4 +1,4 @@
-## boui
+## bolin-ui
 [![npm version](https://badge.fury.io/js/bolin-ui.svg)](https://badge.fury.io/js/bolin-ui)
 
 ## QuickStart
