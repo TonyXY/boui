@@ -1,24 +1,15 @@
-# boui
+## boui
+[![npm version](https://badge.fury.io/js/bolin-ui.svg)](https://badge.fury.io/js/bolin-ui)
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
+## QuickStart
+```bash
+npm install bolin-ui
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
 
-### Run your unit tests
+## usage
 ```
-npm run test:unit
+import boUi from 'bolin-ui'
+import 'bolin-ui/dist/bolin-ui.css'
+Vue.use(boUi)
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
