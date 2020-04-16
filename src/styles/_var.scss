@@ -17,7 +17,40 @@ $success-active: #5daf34;
 $warning-active: #cf9236;
 $danger-active: #dd6161;
 $info-active: #82848a;
-
+$--sm: 768px !default;
+$--md: 992px !default;
+$--lg: 1200px !default;
+$--xl: 1920px !default;
+$map: (
+  "xs": (max-width: $--sm - 1),
+  "sm": (min-width: $--sm),
+  "md": (min-width: $--md),
+  "lg": (min-width: $--lg),
+  "xl": (min-width: $--xl)
+);
+@mixin res($key) {
+    @if $key=='xs' {
+        @media only screen and (min-width: $--sm - 1) {
+            @content; // 插槽
+        }
+    }@else if $key=='sm' {
+        @media only screen and (min-width: $--sm) and (max-width: $--md - 1) {
+            @content; // 插槽
+        }
+    }@else if $key=='md' {
+        @media only screen and (min-width: $--md) and (max-width: $--lg - 1) {
+            @content; // 插槽
+        }
+    }@else if $key=='lg' {
+        @media only screen and (min-width: $--lg) and (max-width: $--xl - 1) {
+            @content; // 插槽
+        }
+    }@else if $key=='xl' {
+        @media only screen and (min-width: $--xl) {
+            @content; // 插槽
+        }
+    }
+}
 * {
     padding: 0;
     margin: 0;

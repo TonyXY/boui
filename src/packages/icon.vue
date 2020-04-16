@@ -1,11 +1,11 @@
 <template>
-    <svg class="bo-icon" aria-hidden="true">
+    <svg class="bo-icon" aria-hidden="true" @click="$emit('click')">
         <use :xlink:href="`#icon-${icon}`"></use>
     </svg>
 </template>
 
 <script>
-import '../styles/icon'
+import '@/styles/icon'
 export default {
     name:'bo-icon',
     props:{

@@ -1,7 +1,7 @@
 
 import { shallowMount } from '@vue/test-utils'
 import { expect } from 'chai'
-import Button from '@/packages/button.vue'
+import Button from '@/packages/button/button.vue'
 import Icon from '@/packages/icon.vue'
 
 describe('button.vue', () => {

@@ -9,7 +9,7 @@ export default{
 }
 </script>
 <style lang="scss">
-@import "../styles/_var.scss";
+@import "@/styles/_var.scss";
 .bo-button-group{
     display:inline-flex;
     vertical-align: middle;
