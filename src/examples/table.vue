@@ -9,7 +9,7 @@
             height="200px"
         >
             <template slot="name" slot-scope="{ row, col }">
-                <h1>{{ row[col.key] }}</h1>
+                <h3>{{ row[col.key] }}</h3>
             </template>
             <template slot="action">
                 <bo-button>删除</bo-button>

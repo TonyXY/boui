@@ -16,6 +16,10 @@ import Upload from "./upload/upload.vue";
 
 import DatePicker from "./date-picker/date-picker.vue";
 import Popover from './popover.vue';
+import Carousel from "./carousel/carousel.vue";
+import CarouselItem from "./carousel/carousel-item.vue";
+import Pagination from "./pagination/pagination.vue";
+import Table from "./table/table.vue";
 import infiniteScroll from "./infiniteScroll"
 const install = (Vue)=>{
     Vue.component(Button.name,Button)
@@ -34,7 +38,10 @@ const install = (Vue)=>{
     Vue.component(Progress.name, Progress)
     Vue.component(DatePicker.name, DatePicker)
     Vue.component(Popover.name, Popover);
-
+    Vue.component(Carousel.name, Carousel);
+    Vue.component(CarouselItem.name, CarouselItem);
+    Vue.component(Pagination.name, Pagination);
+    Vue.component(Table.name, Table);
     
     Vue.directive(infiniteScroll.name, infiniteScroll);
 }
